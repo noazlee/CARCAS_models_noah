@@ -1,0 +1,5 @@
+[submodule "CARCAS_models_noah"]
+	path = CARCAS_models_noah
+	url = https://github.com/noazlee/CARCAS_models_noah.git
+	datalad-id = eba87325-3fe3-4d71-b47d-48584a6dbe40
+	datalad-url = https://github.com/noazlee/CARCAS_models_noah.git
