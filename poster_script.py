@@ -4,10 +4,6 @@ import datalad.api as dl
 # Define the GitHub repository URL
 github_repo_url = 'github://noazlee/CARCAS_models_noah'
 
-def fetch_carcas_data(target_directory):
-    # Ensure the dataset is present
-    dl.install(github_repo_url, recursive=True, path=target_directory)
-
 def search_for_posters(root_directory):
     posters_found = False
 
@@ -29,10 +25,9 @@ def search_for_posters(root_directory):
 
 def main():
     # Define the target directory to fetch the dataset
-    target_directory = '.'  # Set to the current directory
+    target_directory = '/Users/noahlee/Documents/CARCAS_models_noah/CARCAS_models_noah'  # Set to the current directory
 
-    # Fetch CARCAS data from the Datalad dataset
-    fetch_carcas_data(target_directory)
+    # Manually clone the datalad data before doing this so you make sure the data is as updated as possible.
 
     # Traverse through the fetched dataset to search for posters
     search_for_posters(target_directory)
